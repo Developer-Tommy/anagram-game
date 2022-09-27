@@ -1,0 +1,66 @@
+{
+  "anagrams":
+  [
+    {
+      "id": "1",
+      "question": "RAABVISALT",
+      "answer": "BRATISLAVA",
+      "hint": "A capital of Slovakia."
+    },
+    {
+      "id": "2",
+      "question": "LAMPA",
+      "answer": "PALMA",
+      "hint": "A tree growing coconuts (Slovak translation)."
+    },
+    {
+      "id": "3",
+      "question": "KARAMEL",
+      "answer": "REKLAMA",
+      "hint": "Commercial break (Slovak translation)."
+    },
+    {
+      "id": "4",
+      "question": "MINULOBRA",
+      "answer": "MILOURBAN",
+      "hint": "Slovak literature author."
+    },
+    {
+      "id": "5",
+      "question": "AČKAM",
+      "answer": "MAČKA",
+      "hint": "An animal which hunts mice (Slovak translation)."
+    },
+    {
+      "id": "6",
+      "question": "TASTE",
+      "answer": "STATE",
+      "hint": "Slovakia, Czech Republic, USA..."
+    },
+    {
+      "id": "7",
+      "question": "DIRTYROOM",
+      "answer": "DORMITORY",
+      "hint": "An accommodation for students at university."
+    },
+    {
+      "id": "8",
+      "question": "HEBUGSGORE",
+      "answer": "GEORGEBUSH",
+      "hint": "President of United States in 2001-2009."
+    },
+    {
+      "id": "9",
+      "question": "TRIMSCASH",
+      "answer": "CHRISTMAS",
+      "hint": "The biggest holiday of the year."
+    },
+    {
+      "id": "10",
+      "question": "BELOW",
+      "answer": "ELBOW",
+      "hint": "A Part of an arm."
+    }
+
+  ]
+}

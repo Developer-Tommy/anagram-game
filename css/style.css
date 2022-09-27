@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: FreeMono, monospace;
+    font-size: 1.5rem;
+    background-color: #191414;
+    margin: 0;
+}
+
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    padding: 0 15px 0px 15px;
+    margin: 20px 10px;
+    background-color: #1ED760;
+    color: #191414;
+    font-size: xxx-large;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.letters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#after-msg {
+    padding: 10px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game-button, .restart {
+    padding: 20px;
+    background-color: #1ED760;
+    color: #191414;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: large;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#instructions, #end-of-game {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    color: white;
+    background-color: #191414;
+    border: solid 5px #1ED760;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 30px;
+    font-size: large;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.95;
+    margin: auto;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191414;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+#points {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    color: white;
+}
+
+#levels {
+    position: absolute;
+    margin: 10px;
+    color: white;
+}
+
+.game {
+    width: auto;
+    height: 400px;
+    margin: 0 10% 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #1ED760;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#rules {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 70px 10% 40px 10%;
+    align-items: center;
+    color: white;
+    background-color: #191414;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border: 5px solid #1ED760;
+}
+
+.game-btn {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #191414;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 170px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: #191414;
+    width: 90%;
+    height: 21%;
+    padding: 10px;
+}
+
+li {
+    padding: 12px 15px 17px 15px;
+    margin: 5px;
+    height: 80%;
+    width: 100%;
+    background-color: #1ED760;
+    color: #191414;
+    font-size: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#question > li {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 561px) and (max-width: 700px){
+    ul {
+        width: 95%;
+    }
+    li {
+        font-size: 1.5rem;
+        padding: 5px;
+        margin: 10px 4px 2px 4px;
+        height: 60%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 560px){
+    h1 {
+        font-size: 1.5rem;
+        height: 40px;
+        padding: 5px 13px;
+        margin: 20px 5px;
+    }
+    .game {
+        margin: 0 30px;
+    }
+    #rules {
+        margin: 70px 30px 40px 30px;
+    }
+     ul {
+         width: 95%;
+     }
+     li {
+         font-size: 1.5rem;
+         padding: 5px;
+         margin: 10px 4px 2px 4px;
+         height: 60%;
+         width: 100%;
+     }
+     #rules {
+         font-size: 1.2rem;
+     }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    #ok-game-btn {
+        font-size: 0.8rem;
+        width: 100px;
+    }
+
+    .restart, #rules-game-btn {
+        width: 150px;
+        font-size: 0.8rem;
+    }
+
+    #instructions, #end-of-game {
+        width: auto;
+        height: auto;
+        font-size: medium;
+    }
+
+}
+
+@media only screen and (max-width: 380px){
+    h1 {
+        font-size: 1.5rem;
+        height: 40px;
+        padding: 5px 13px;
+        margin: 20px 5px;
+    }
+    .game {
+        margin: 0 10px;
+    }
+    #rules {
+        margin: 70px 30px 40px 30px;
+    }
+    ul {
+        width: 95%;
+    }
+    li {
+        font-size: 1.5rem;
+        padding: 5px;
+        margin: 10px 4px 2px 4px;
+        height: 60%;
+        width: 100%;
+    }
+    #rules {
+        font-size: 1.2rem;
+    }
+    span {
+        font-size: 1.2rem;
+    }
+    #ok-game-btn {
+        font-size: 0.8rem;
+        width: 100px;
+    }
+
+    .restart, #rules-game-btn {
+        width: 150px;
+        font-size: 0.8rem;
+    }
+
+    #instructions, #end-of-game {
+        width: auto;
+        height: auto;
+        font-size: medium;
+    }
+
+}
+
+@media print {
+    #title {
+        position: absolute;
+        top: 10%;
+    }
+
+    #instructions {
+        display: flex;
+        width: 100%;
+        border: none;
+        color: black;
+    }
+    #rules, #end-of-game {
+        display: flex;
+        width: 100%;
+        margin: 50px 0;
+        border: none;
+        color: black;
+        text-align: center;
+    }
+
+    #levels, #points {
+        color: black;
+    }
+    #after-msg, #buttons, #ok-game-btn, .game, #restart-game-btn {
+        display: none;
+    }
+}

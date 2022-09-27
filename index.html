@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="./manifest.json">
+    <script src="./js/appWorker.js"></script>
+    <meta name="theme-color" content="#1ED760"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrams Game</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section id="welcome-page">
+        <div id="title">
+            <div class="letters">
+                <h1>A</h1>
+                <h1>N</h1>
+                <h1>A</h1>
+                <h1>G</h1>
+                <h1>R</h1>
+                <h1>A</h1>
+                <h1>M</h1>
+            </div>
+            <div class="letters">
+                <h1>G</h1>
+                <h1>A</h1>
+                <h1>M</h1>
+                <h1>E</h1>
+            </div>
+            <p id="after-msg">let's start</p>
+        </div>
+        <div id="buttons">
+            <button class="restart" id="start-game-btn" type="button">Start <br>Game</button>
+            <button class="game-button" id="rules-game-btn" type="button">Rules & Instructions</button>
+        </div>
+
+        <div id="instructions">
+            <h1>Instructions</h1>
+            <p>Welcome to "ANAGRAM GAME". Your task is to put letters which are shuffled in correct order and create a correct word. You can use HINTS by clicking a hint button to help you fullfill your task. When you have no idea, you can always check correct answer by clicking an answer button.
+                <br><br>Every correct answer is for 10 points and everytime you use answer button your points are deducted by 5 points.</p>
+            <button class="game-button" id="ok-game-btn" type="button">OK</button>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span id="levels"></span>
+        <span id="points">Points: 0</span>
+        <div id="rules">
+            <p id="text">To start solving game, click on LEVEL 1. Good luck!</p>
+        </div>
+        <div class="game">
+            <div class="game-btn">
+                <button id="new-game">LEVEL 1</button>
+                <button id="show-hint">HINT</button>
+                <button id="show-solution">ANSWER</button>
+            </div>
+            <ul id="question"></ul>
+            <ul id="answer"></ul>
+        </div>
+
+        <div id="end-of-game">
+
+        </div>
+    </div>
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
